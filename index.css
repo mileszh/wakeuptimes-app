@@ -1,0 +1,35 @@
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: "#f5f5f5";
+  text-align: center;
+  color: #333;
+}
+h1 {
+  color: purple;
+}
+p {
+  line-height: 1.5;
+}
+#calc-btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+#calc-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.cycle {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #333;
+  margin: 0.5rem;
+}
