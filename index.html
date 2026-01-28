@@ -3,18 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
     <title>WakeUp Times</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>WakeUp Times</h1>
-    <p>
-      A sleep cycle lasts about 90 minutes, and a good night's sleep consists of
-      5-6 sleep cycles.
-    </p>
-    <p>If you go to bed now, when should you wake up?</p>
-    <button id="calc-btn">Calculate</button>
-    <div id="wakeup-hours-div"></div>
+    <div id="app">
+      <section id="prompt-section">
+        <h1>WakeUp Times</h1>
+        <p>
+          A sleep cycle lasts about 90 minutes, and a good night's sleep
+          consists of 5-6 sleep cycles.
+        </p>
+        <p>If you go to bed now, when should you wake up?</p>
+        <button id="calc-btn">Calculate</button>
+      </section>
+      <div id="img-container">
+        <img src="moon.png" alt="moon" />
+      </div>
+      <section id="result-section" class="hidden">
+        <div class="button-group">
+          <button id="return-btn">←</button>
+          <button id="refresh-btn">Refresh</button>
+        </div>
+
+        <p>Try to wake up at one of these times:</p>
+        <div id="wakeup-hours-div"></div>
+        <p><small>* It takes ~14 minutes to fall asleep.</small></p>
+      </section>
+    </div>
 
     <script src="index.js"></script>
   </body>
