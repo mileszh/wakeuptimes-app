@@ -5,6 +5,7 @@ const resultSection = document.getElementById("result-section");
 const promptSection = document.getElementById("prompt-section");
 const returnBtn = document.getElementById("return-btn");
 const refreshBtn = document.getElementById("refresh-btn");
+const imageContainer = document.getElementById("img-container");
 
 function calcWakeUpTimes() {
   const fallAsleepTime = new Date();
@@ -27,6 +28,7 @@ function calcWakeUpTimes() {
   }
   resultSection.classList.remove("hidden");
   promptSection.classList.add("hidden");
+  imageContainer.classList.add("hidden");
 }
 
 function goBack() {
